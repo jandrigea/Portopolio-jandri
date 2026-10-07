@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Navigasi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #0f5132 0%, #1e7e34 100%);
+            min-height: 100vh;
+            padding: 25px 15px;
+            color: #fff;
+        }
+        
+        .menu-title {
+            text-align: center;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.75;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            margin-bottom: 25px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        li {
+            margin-bottom: 12px;
+        }
+        /* ✅ Link jadi tombol yang jelas */
+        
+        a {
+            display: block;
+            padding: 14px 18px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            background: #ffffff;
+            color: #1e7e34;
+            border-color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+        }
+        
+        a:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        .footer-menu {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 11px;
+            opacity: 0.6;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            a {
+                padding: 10px 12px;
+                font-size: 12px;
+            }
+            .menu-title {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-title">Menu Navigasi</div>
+
+    <ul>
+        <li><a href="home.html" target="mainFrame">Home</a></li>
+        <li><a href="about.html" target="mainFrame">Tentang Saya</a></li>
+        <li><a href="skill.html" target="mainFrame">Keahlian</a></li>
+        <li><a href="contact.html" target="mainFrame">Kontak</a></li>
+    </ul>
+
+    <div class="footer-menu">
+        &copy; 2026<br>Jandri Hartat Gea
+    </div>
+</body>
+
+</html>

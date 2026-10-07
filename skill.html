@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #f4f9f4;
+            padding: 40px;
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .page-title {
+            font-size: 28px;
+            color: #1e7e34;
+            margin-bottom: 8px;
+            border-left: 5px solid #28a745;
+            padding-left: 15px;
+        }
+        
+        .subtitle {
+            color: #777;
+            margin-bottom: 30px;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+        
+        .skill-section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            margin-bottom: 25px;
+        }
+        
+        .skill-section h2 {
+            color: #28a745;
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+        
+        .skill-item {
+            margin-bottom: 18px;
+        }
+        
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .skill-header .percent {
+            color: #28a745;
+        }
+        
+        .progress-bar {
+            background: #e8f5e9;
+            height: 12px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #28a745, #20c997);
+            border-radius: 10px;
+            transition: width 1s ease;
+        }
+        
+        .badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .badge {
+            background: #e8f5e9;
+            color: #1e7e34;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid #c3e6cb;
+            transition: all 0.3s;
+        }
+        
+        .badge:hover {
+            background: #28a745;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .tool-card {
+            background: #f4f9f4;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e8f5e9;
+            transition: all 0.3s;
+        }
+        
+        .tool-card:hover {
+            border-color: #28a745;
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px rgba(40, 167, 69, 0.15);
+        }
+        
+        .tool-card .icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        
+        .tool-card .name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1e7e34;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="page-title">Keahlian Saya</h1>
+    <p class="subtitle">Kemampuan teknis yang saya kuasai dalam bidang pemrograman dan pengembangan web.</p>
+
+    <div class="skill-section">
+        <h2>Bahasa Pemrograman</h2>
+
+        <div class="skill-item">
+            <div class="skill-header"><span>HTML & CSS</span><span class="percent">95%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width:95%"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-header"><span>JavaScript</span><span class="percent">85%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width:85%"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-header"><span>PHP</span><span class="percent">80%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width:80%"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-header"><span>Python</span><span class="percent">75%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width:75%"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-header"><span>Java</span><span class="percent">70%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width:70%"></div>
+            </div>
+        </div>
+
+        <div class="skill-item">
+            <div class="skill-header"><span>MySQL / Database</span><span class="percent">82%</span></div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width:82%"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skill-section">
+        <h2>Tools & Framework</h2>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <div class="name">React.js</div>
+            </div>
+            <div class="tool-card">
+                <div class="name">Bootstrap</div>
+            </div>
+            <div class="tool-card">
+                <div class="name">Laravel</div>
+            </div>
+            <div class="tool-card">
+                <div class="name">Git & GitHub</div>
+            </div>
+            <div class="tool-card">
+                <div class="name">Figma</div>
+            </div>
+            <div class="tool-card">
+                <div class="name">Docker</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skill-section">
+        <h2>Soft Skills</h2>
+        <div class="badges">
+            <span class="badge">Problem Solving</span>
+            <span class="badge">Team Work</span>
+            <span class="badge">Komunikasi</span>
+            <span class="badge">Manajemen Waktu</span>
+            <span class="badge">Cepat Belajar</span>
+            <span class="badge">Kreatif</span>
+            <span class="badge">Detail Oriented</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #f4f9f4;
+            padding: 40px;
+            color: #333;
+            min-height: 100vh;
+        }
+        
+        .page-title {
+            font-size: 28px;
+            color: #1e7e34;
+            margin-bottom: 8px;
+            border-left: 5px solid #28a745;
+            padding-left: 15px;
+        }
+        
+        .subtitle {
+            color: #777;
+            margin-bottom: 30px;
+            padding-left: 20px;
+            font-size: 14px;
+        }
+        
+        .content-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+        
+        .content-box h2 {
+            color: #28a745;
+            font-size: 19px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .content-box p {
+            font-size: 15px;
+            color: #444;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .info-item {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .info-item .label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .info-item .value {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e7e34;
+        }
+        
+        ul.list-edu {
+            list-style: none;
+            margin-top: 15px;
+        }
+        
+        ul.list-edu li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            border-bottom: 1px dashed #ddd;
+            font-size: 15px;
+        }
+        
+        ul.list-edu li:last-child {
+            border-bottom: none;
+        }
+        
+        ul.list-edu li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="page-title">Tentang Saya</h1>
+    <p class="subtitle">
+        Mengenal lebih dekat siapa saya dan latar belakang pendidikan saya.
+    </p>
+
+    <div class="content-box">
+        <h2>Perkenalan Singkat</h2>
+        <p>
+            Nama saya <strong>Jandri  Hartat Gea</strong>, seorang mahasiswa aktif jurusan
+            <strong>Teknik Informatika</strong> di
+            <strong>Universitas Pamulang</strong>. Saya memiliki ketertarikan mendalam pada bidang pengembangan perangkat lunak, khususnya
+            <strong>web development</strong> dan
+            <strong>mobile programming</strong>. Saya percaya bahwa teknologi adalah alat untuk menciptakan solusi nyata bagi masalah di masyarakat.
+        </p>
+        <p>
+            Selama menempuh pendidikan, saya aktif mengerjakan berbagai proyek akademik maupun pribadi, mulai dari aplikasi sederhana berbasis web hingga sistem informasi yang lebih kompleks. Saya juga senang mempelajari teknologi baru dan berkolaborasi dalam tim.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="label">Nama</div>
+                <div class="value">Jandri Hartat Gea</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Universitas</div>
+                <div class="value">Universitas Pamulang</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Jurusan</div>
+                <div class="value">Teknik Informatika</div>
+            </div>
+            <div class="info-item">
+                <div class="label">Status</div>
+                <div class="value">Mahasiswa Aktif</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <h2> Riwayat Pendidikan</h2>
+        <ul class="list-edu">
+            <li>
+                <strong>Universitas Pamulang</strong> — S1 Teknik Informatika (2024 - Sekarang)
+            </li>
+            <li>
+                <strong>SMA Negeri 1 Tuhemberua Nias Utara</strong> — Jurusan IPA (2021 - 2024)
+            </li>
+            <li><strong>SMP Negeri 1 Tuhemberua Nias Utara</strong> — (2018- 2021)</li>
+        </ul>
+    </div>
+
+    <div class="content-box">
+        <h2>Minat & Fokus</h2>
+        <p>
+            Fokus utama saya saat ini adalah memperdalam
+            <strong>Full Stack Web Development</strong> menggunakan teknologi modern seperti HTML5, CSS3, JavaScript, PHP, dan framework seperti Laravel serta React. Selain itu, saya juga tertarik pada bidang
+            <strong>database design</strong>, <strong>UI/UX</strong>, dan
+            <strong>cloud computing</strong>.
+        </p>
+    </div>
+</body>
+
+</html>

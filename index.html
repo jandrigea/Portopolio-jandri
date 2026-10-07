@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Jandri Hartat Gea</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+            background: #f4f9f4;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-rows: 110px 1fr;
+            /* header 110px, sisanya konten */
+            grid-template-columns: 200px 1fr;
+            /* menu 200px, sisanya main */
+            grid-template-areas: "header header" "menu   main";
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        
+        .frame-header {
+            grid-area: header;
+        }
+        
+        .frame-menu {
+            grid-area: menu;
+        }
+        
+        .frame-main {
+            grid-area: main;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-rows: 90px 55px 1fr;
+                /* header, menu, konten */
+                grid-template-columns: 1fr;
+                /* satu kolom penuh */
+                grid-template-areas: "header" "menu" "main";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <iframe src="header.html" class="frame-header" scrolling="no" title="Header"></iframe>
+        <iframe src="menu.html" class="frame-menu" scrolling="no" title="Menu"></iframe>
+        <iframe src="home.html" name="mainFrame" class="frame-main" scrolling="auto" title="Konten"></iframe>
+    </div>
+</body>
+
+</html>
